@@ -11,6 +11,7 @@ packages: [
   "language-swift"
   "latex"
   "linter"
+  "linter-yaml"
   "multi-cursor"
   "package-sync"
   "pdf-view"

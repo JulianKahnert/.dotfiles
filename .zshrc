@@ -139,6 +139,14 @@ agrepl() {
   ag -0 -l "$1" | xargs -0 sed -E -i '' 's/'$1'/'$2'/g'
 }
 
+# force delete a kubernetes namespace
+kubernetes_force_delete_ns() {
+    local NAMESPACE="$1"
+    kubectl proxy &
+    kubectl get namespace $NAMESPACE -o json |jq '.spec = {"finalizers":[]}' >temp.json
+    curl -k -H "Content-Type: application/json" -X PUT --data-binary @temp.json 127.0.0.1:8001/api/v1/namespaces/$NAMESPACE/finalize
+}
+
 # pyenv stuff
 if which pyenv > /dev/null
 then
