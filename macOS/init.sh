@@ -29,16 +29,12 @@ brew install mas
 brew install getantibody/tap/antibody
 
 # Install media stuff.
-brew install gifsicle
+#brew install gifsicle
 
 # Install caskroom apps.
 brew tap caskroom/versions
 brew cask install appcleaner
-brew cask install atom
 brew cask install caffeine
-brew cask install forklift
-brew cask install etcher
-brew cask install mactex
 brew cask install sourcetree
 
 # Install fonts
@@ -60,7 +56,6 @@ mas install 409203825   # Numbers
 mas install 409201541   # Pages
 mas install 409183694   # Keynote
 mas install 408981434   # iMovie
-mas install 921923693   # LibreOffice Vanilla
 mas install 443987910   # 1Password
 mas install 430255202   # Mactracker
 mas install 470158793   # Keka
@@ -68,8 +63,8 @@ mas install 904280696   # Things 3
 mas install 441258766   # Magnet
 
 # install python stuff
-brew install pyenv
-brew install pyenv-virtualenv
+#brew install pyenv
+#brew install pyenv-virtualenv
 # pyenv install 3.6.0
 
 # use osxkeychain for git credentials

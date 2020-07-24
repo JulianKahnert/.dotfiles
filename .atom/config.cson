@@ -69,7 +69,6 @@
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: false
-    softWrap: true
     softWrapHangingIndent: 2
     tabLength: 4
     tabType: "soft"
