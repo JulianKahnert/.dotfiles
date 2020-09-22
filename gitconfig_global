@@ -1,6 +1,9 @@
 [user]
     name = Julian Kahnert
 
+[init]
+    defaultBranch = main
+
 [core]
     editor = vim
     precomposeunicode = true
